@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport", :charset => "utf-8"}/
+    %title= current_page.data.title || "PortfolioMan"
+    %link{:href => "/stylesheets/site.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "site.js"}
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css", :rel => "stylesheet"}/
+  %body
+    = yield
+    = partial 'partial/nav'

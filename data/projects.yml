@@ -1,0 +1,14 @@
+- name: BMI Calculator
+  description: A Javascript project for calculating BMI with metric or imperial data
+  github: https://github.com/nurlanemir/bmi-challenge
+  published: https://nurlanemir.github.io/bmi-challenge/
+
+- name: FizzBuzz Play
+  description: A Javascript project for playing FizzBuzz game
+  github: https://github.com/nurlanemir/fizz_buzz_js
+  published: https://nurlanemir.github.io/fizz_buzz_js/
+
+- name: SpiceItUp
+  description: Bootcamp group project - a web restaurant for users to order dishes.
+  github: https://github.com/CraftAcademy/slow_food_sinatra_august_17
+  published: https://spice-it-up.herokuapp.com/
