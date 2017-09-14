@@ -1,5 +1,9 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
+# Disable warnings
+Haml::TempleEngine.disable_option_validator!
+
+activate :livereload
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
