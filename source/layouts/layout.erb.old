@@ -9,7 +9,10 @@
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   </head>
+  <%= partial "partials/nav" %>
+  <%= partial "partials/about" %>
   <body>
     <%= yield %>
   </body>

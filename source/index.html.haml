@@ -1,18 +1,23 @@
-%head
-  %link{:href => "https://fonts.googleapis.com/css?family=Montserrat|Cardo", :rel => "stylesheet", :type => "text/css"}/
-  %header.main_h
-    .row
-      %a.logo{:href => "http:https//www.nurlanemir.com/"}
-      .mobile-toggle
-        %span
-        %span
-        %span
-      %nav
-        %ul
-          %li
-            %a{:href => ".sec01"} Projects
-    / / row
 %body
+#menu-nav
+  #navigation-bar
+    %ul
+      %li.menu-sub-nav
+        %a{:href => "/"}
+          %i.fa.fa-home
+          %span Home
+      %li.menu-sub-nav
+        %a{:href => "/"}
+          %i.fa.fa-cogs
+          %span Blog
+      %li.menu-sub-nav
+        %a{:href => "/"}
+          %i.fa.fa-user
+          %span About
+      %li.menu-sub-nav
+        %a{:href => "/"}
+          %i.fa.fa-book
+          %span Contact
   .hero
     %h1
       %span "Talk is cheap. Show me the code"
@@ -21,7 +26,7 @@
     .mouse
       %span
 .row.content
-  %h1.sec01 Projects
+  %h2.sec01 Projects
   .projects
     - data.projects.each do |project|
       %h4= project[:name]
@@ -31,3 +36,20 @@
         %br
       - if project[:published] != nil
         %a{:href => "#{project[:published]}", :target => "_new"} Published
+        .br/
+  = partial "partials/about"
+  .row.grayfooter#contact
+    .large-3.columns.footofawesome
+      &nbsp;
+    .large-3.columns.footofawesome
+      %h5.h5foot Contact
+      .tinyhr
+      <html lang="sv">Stockholm</html>
+      %br/
+      nurlan.emiroff@gmail.com
+      %br/
+      %a.footofawesome{:href => "http://www.nurlanemir.com", :target => "_new"} nurlanemir.com
+    .large-3.columns.footofawesome
+      %p Stretching my creative mojo to become Digital World's wizard
+    .large-3.columns.footofawesome
+      &nbsp;

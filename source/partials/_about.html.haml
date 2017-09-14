@@ -1,5 +1,11 @@
-.wrapper
-    %header
-      %nav
-        %ul
-          %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+%section#about
+  .row.about
+    .large-12.columns-centered
+      .medium-6.columns
+        %img{:src => "images/me.jpg"}/
+      .medium-6.columns
+        %h3 About Me
+        .orangehr
+          - data.about.each do |me|
+            %p= me[:name]
+            %p= me[:description]
