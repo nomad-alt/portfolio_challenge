@@ -6,9 +6,9 @@
     %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
     %title= current_page.data.title || "PortfolioMan"
-    = stylesheet_link_tag "site"
-    = javascript_include_tag "site"
     %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css", :rel => "stylesheet"}/
     %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}/
+    = stylesheet_link_tag "site"
+    = javascript_include_tag "site"
   %body
     = yield
