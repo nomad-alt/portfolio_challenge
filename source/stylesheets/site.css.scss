@@ -4,7 +4,12 @@
 @import 'about';
 
 body {
-  min-height: 200vh;
+  min-height: 250vh;
+  margin-right: 0.5px;
+}
+
+h4 {
+  margin-left: 20px;
 }
 
 span.card-title {
