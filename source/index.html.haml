@@ -1,58 +1,14 @@
-.menu-nav
-  .navigation-bar
-    %ul
-      %li.menu-sub-nav
-        = link_to '/' do
-          %i.fa.fa-home
-          %span Home
-      %li.menu-sub-nav
-        = link_to '#blog' do
-          %i.fa.fa-cogs
-          %span Blogs
-      %li.menu-sub-nav
-        = link_to '#about' do
-          %i.fa.fa-user
-          %span About
-      %li.menu-sub-nav
-        = link_to '#projects' do
-          %i.fa.fa-book
-          %span Projects
-      %li.menu-sub-nav
-        = link_to '#contact' do
-          %i.fa.fa-book
-          %span Contact
-.hero
-  %h1
-    %span "Talk is cheap. Show me the code"
-    = succeed "Developer :: Designer" do
-      %br/
-  .mouse
-    %span
-.row.content
-  %h2#projects.sec01 Projects
-  .projects
-    - data.projects.each do |project|
-      %h4= project[:name]
-      %p= project[:description]
-      - if project[:github] != nil
-        %a{:href => "#{project[:github]}", :target => "_new"} Github
-        %br
-      - if project[:published] != nil
-        %a{:href => "#{project[:published]}", :target => "_new"} Published
-        .br/
-  = partial "partials/about"
-  .row.grayfooter#contact
-    .large-3.columns.footofawesome
-      &nbsp;
-    .large-3.columns.footofawesome
-      %h5.h5foot Contact
-      .tinyhr
-      <html lang="sv">Stockholm</html>
-      %br/
-      nurlan.emiroff@gmail.com
-      %br/
-      %a.footofawesome{:href => "http://www.nurlanemir.com", :target => "_new"} nurlanemir.com
-    .large-3.columns.footofawesome
-      %p Stretching my creative mojo to become Digital World's wizard
-    .large-3.columns.footofawesome
-      &nbsp;
+= partial "partials/nav"
+= partial "partials/hero"
+= partial "partials/projects"
+= partial "partials/about"
+
+.row.grayfooter#contact
+  .large-3.columns.footofawesome
+    %h5.h5foot Contact
+    .divider
+    Stockholm
+    %br/
+    nurlan.emiroff@gmail.com
+    %br/
+    %a.footofawesome{:href => "http://www.nurlanemir.com", :target => "_new"} nurlanemir.com

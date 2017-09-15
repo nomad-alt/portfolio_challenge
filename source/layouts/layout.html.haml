@@ -6,9 +6,11 @@
     %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
     %title= current_page.data.title || "PortfolioMan"
+    %link{:href => "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css", :rel => "stylesheet"}/
     %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css", :rel => "stylesheet"}/
-    %link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     = stylesheet_link_tag "site"
-    = javascript_include_tag "site"
   %body
     = yield
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"}
+    = javascript_include_tag "site"

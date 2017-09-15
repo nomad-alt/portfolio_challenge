@@ -1,0 +1,11 @@
+.row#projects
+  %h4.header Projects
+  - data.projects.each do |pr|
+    .col.s12.m6
+      .card.blue-grey.darken-1
+        .card-content.white-text
+          %span.card-title= pr[:name]
+          %p= pr[:description]
+        .card-action
+          %a{:href => "#{pr[:github]}", :target => "_new"} Github
+          %a{:href => "#{pr[:published]}", :target => "_new"} Published

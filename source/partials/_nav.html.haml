@@ -1,1 +1,23 @@
-
+%nav
+  .nav-wrapper
+    %a.brand-logo{:href => "#!"} Nurlan Emir Developer
+    %a.button-collapse{"data-activates" => "mobile-demo", :href => "#"}
+      %i.material-icons menu
+    %ul.right.hide-on-med-and-down
+      %li
+        = link_to "Projects", '#projects'
+      %li
+        = link_to "About", '#about'
+      %li
+        = link_to "Contact", '#contact'
+      %li
+        = link_to "Blog", '#blog'
+    %ul#mobile-demo.side-nav
+      %li
+        = link_to "Projects", '#projects'
+      %li
+        = link_to "About", '#about'
+      %li
+        = link_to "Contact", '#contact'
+      %li
+        = link_to "Blog", '#blog'
