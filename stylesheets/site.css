@@ -1,0 +1,44 @@
+.nav-wrapper {
+  background-color: #4B697C;
+  padding-left: 10px; }
+
+.brand-logo {
+  font-weight: 100;
+  padding-left: 50px; }
+
+.col {
+  width: 1000px; }
+
+.card-content {
+  font-style: italic;
+  width: 500px; }
+
+body {
+  min-height: 200vh; }
+
+span.card-title {
+  font-style: normal;
+  font-weight: bold;
+  color: #ff9012; }
+
+.grayfooter {
+  background-color: #546e7a;
+  padding: 50px;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border: 0px 100px; }
+
+.footofawesome {
+  color: #a2a2a2;
+  text-align: center; }
+
+.h5foot {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ff9012; }
+
+a.footofawesome {
+  color: #ff9012; }
+  a.footofawesome:hover {
+    color: #ffffff; }
